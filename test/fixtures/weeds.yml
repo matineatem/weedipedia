@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  strain: MyString
+  thc_percentage: 1.5
+  lineage: MyString
+  activites: MyString
+  feelings: MyString
+  cbd_percentage: 1.5
+
+two:
+  strain: MyString
+  thc_percentage: 1.5
+  lineage: MyString
+  activites: MyString
+  feelings: MyString
+  cbd_percentage: 1.5

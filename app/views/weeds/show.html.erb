@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Strain:</strong>
+  <%= @weed.strain %>
+</p>
+
+<p>
+  <strong>Thc percentage:</strong>
+  <%= @weed.thc_percentage %>
+</p>
+
+<p>
+  <strong>Lineage:</strong>
+  <%= @weed.lineage %>
+</p>
+
+<p>
+  <strong>Activites:</strong>
+  <%= @weed.activites %>
+</p>
+
+<p>
+  <strong>Feelings:</strong>
+  <%= @weed.feelings %>
+</p>
+
+<p>
+  <strong>Cbd percentage:</strong>
+  <%= @weed.cbd_percentage %>
+</p>
+
+<%= link_to 'Edit', edit_weed_path(@weed) %> |
+<%= link_to 'Back', weeds_path %>

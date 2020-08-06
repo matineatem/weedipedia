@@ -1,0 +1,47 @@
+<%= form_with(model: weed, local: true) do |form| %>
+  <% if weed.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(weed.errors.count, "error") %> prohibited this weed from being saved:</h2>
+
+      <ul>
+        <% weed.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :strain %>
+    <%= form.text_field :strain %>
+  </div>
+
+  <div class="field">
+    <%= form.label :thc_percentage %>
+    <%= form.text_field :thc_percentage %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lineage %>
+    <%= form.text_field :lineage %>
+  </div>
+
+  <div class="field">
+    <%= form.label :activites %>
+    <%= form.text_field :activites %>
+  </div>
+
+  <div class="field">
+    <%= form.label :feelings %>
+    <%= form.text_field :feelings %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cbd_percentage %>
+    <%= form.text_field :cbd_percentage %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
